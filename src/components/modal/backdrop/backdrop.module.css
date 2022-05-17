@@ -1,0 +1,11 @@
+.backgdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000000c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
