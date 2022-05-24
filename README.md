@@ -1,6 +1,6 @@
-# Atrask Save :muscle: :runner:
-
-| 📖 Table Of Contents   | link      |
+![](./banner.png) 
+# Atrask Save :runner: :swimmer:
+| 📖 Table Of Contents   | link       |
 |------------------------|------------|
 | About                  | [here](#1) |
 | Dev roadmap            | [here](#2) |
@@ -10,7 +10,6 @@
  To Do
 ## Development roadmap :golf: <a name='2'></a>
  To Do
-
 
 
 ## Available Scripts  🛠️  <a name="3"></a>
