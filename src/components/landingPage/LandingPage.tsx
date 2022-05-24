@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
-import Modal from "../modal"
+import Modal from "../modal/Modal "
 import basketBall from "../../assets/basketBall.svg"
 import basketHoop from "../../assets/basketHoop.svg"
 import styles from "./landingPage.module.css"
@@ -59,7 +59,7 @@ const LandingPage = () => {
           initial="hidden"
           variants={textTransition}
         >
-          Surask savo <br/><b>Sporta</b>
+          Atrask savo <br/><b>Sportą</b>
         </motion.h1>
       
         <motion.img

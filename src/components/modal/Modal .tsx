@@ -1,13 +1,14 @@
 import { motion } from "framer-motion"
-import Backdrop from "./backdrop"
+import Backdrop from "./backdrop/Backdrop"
 import goal from "../../assets/goal.svg"
 import styles from "./modal.module.css"
+import { useNavigate } from "react-router-dom"
 
 interface Props {
   onClose: () => void
 }
 
-const slideIn = {
+export const slideIn = {
   hidden : {
     x: "100vw",
     opacity: 0,
@@ -26,8 +27,10 @@ const slideIn = {
   }
 }
 
+
 const Modal = ({ onClose }: Props) => {
-  
+  const navigate = useNavigate()
+
   return (
     <Backdrop onClick={onClose} >
       <motion.div
@@ -40,25 +43,29 @@ const Modal = ({ onClose }: Props) => {
         exit='exit'
       >
         <div className={styles.banner}>
-          <h3>Atsakyk ir surask</h3>
+          <h2>Atsakyk ir surask</h2>
           <img src={goal} className={styles.bannerImg} alt="goalImg"/>
         </div>
 
         <div className={styles.formWrapper}>
           <div className={styles.form}>
-            <div className={styles.option} style={{maxWidth: '50%'}}>
-              Ar megsti adrenalina?
+            <div className={styles.option} style={{maxWidth: '65%'}}>
+               Kiek eurų esi linkęs paploti?
               <input type='range'/>
             </div>
-            <div  className={styles.option} style={{maxWidth: '70%'}}> 
-              Ar miegsti prakaituoti vienas?
+            <div  className={styles.option} style={{maxWidth: '80%'}}> 
+            
+              Kaip stipriai megsti adrenalina?
               <input type='range'/>
             </div>
             <div  className={styles.option} style={{maxWidth: '90%'}}> 
-              Kiek eurų esi linkęs paploti?
+        
+              Kaip  stipriai nori prakaituoti vienas?
               <input type='range'/>
             </div>
-          <button type="submit">Ieškoti</button>
+            <button type="submit" onClick={() => navigate('sports/tennis')}>
+              Ieškoti
+            </button>
           </div>
 
         </div>

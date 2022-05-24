@@ -1,0 +1,40 @@
+.tennis {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -5%; */
+}
+
+.sportInfo {
+  width: 30%;
+  height: 100%;
+  margin: 2rem;
+  text-align: left;
+}
+
+.gymSlider {
+  width: 25%;
+  margin: 4rem;
+  margin-top: 6rem;
+  height: 60%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.sportImg {
+  /* position: absolute; */
+  max-width: 30%;
+  margin-left: -5%;
+  margin-bottom: -5%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+.gymSlider img {
+  max-width: 60%;
+}

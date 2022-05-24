@@ -1,0 +1,29 @@
+.app {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.header {
+  height: 15%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header img {
+  position: absolute;
+  margin: 2rem;
+  width: 125px;
+  height: auto;
+}
+
+
+
+.content {
+  height: 80%;
+  width: 100%;
+}
+

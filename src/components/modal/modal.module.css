@@ -21,7 +21,7 @@
 .bannerImg {
   position: absolute;
   top: auto;
-  left: 30%;
+  left: 35%;
   justify-self: flex-end;
   height: 200px;
   width: min(60%, 500px);
@@ -44,10 +44,8 @@
   height: 90%;
   display: flex;
   padding-left: 2rem;
-  /* justify-content: flex-end; */
   overflow: hidden;
 }
-
 
 .option {
   display: flex;
