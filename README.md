@@ -9,13 +9,19 @@
 ## About 🔍 <a name='1'></a>
  To Do
 ## Development roadmap :golf: <a name='2'></a>
- To Do
+- [x] Create a prototype
+- [x] Create a live version using gh-pages
+- [ ] Improve search form & create nav menu
+- [ ] Create mobile version
+- [ ] Write unit tests
+- [ ] Complete the readme
 
 
 ## Available Scripts  🛠️  <a name="3"></a>
 
-| Script      | Description                           |
-|-------------|---------------------------------------|
-|`yarn start` |  Runs the app in the development mode |
-|`yarn test`  |  Launches the test runner             |
-|`yarn build` |  Builds the app for production        |
+| Script       | Description                    |
+|--------------|--------------------------------|
+|`yarn start`  |  Runs app in  development mode |
+|`yarn test`   |  Launches the test runner      |
+|`yarn build`  |  Builds app for production     |
+|`yarn deploy` |  Deploys app using gh-pages    |
