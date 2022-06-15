@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Link, Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import LandingPage from './landingPage/LandingPage';
 import Sports from './sports/Sports';
 import Tennis from './tennis/Tennis';
@@ -8,15 +8,13 @@ import logo from '../assets/logo.png'
 
 
 const App = () => {
-  // const navigate = useNavigate()
 
   return (
     <div className={styles.app}>
-
-      <BrowserRouter>
+      <HashRouter>
         <nav className={styles.header}>
           <Link to='/'>
-           <img src={logo} alt="Atrask Save"/>
+            <img src={logo} alt="Atrask Save"/>
           </Link>
         </nav>
         <Routes>
@@ -25,10 +23,10 @@ const App = () => {
             <Route path='tennis' element={<Tennis/>}/>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       
     </div>
-  );
+  ) 
 }
 
-export default App;
+export default App
