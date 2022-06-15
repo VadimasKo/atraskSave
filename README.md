@@ -11,7 +11,9 @@
 ## Development roadmap :golf: <a name='2'></a>
 - [x] Create a prototype
 - [x] Create a live version using gh-pages
-- [ ] Improve search form & create nav menu
+- [ ] Create general Sport component
+- [ ] Create few extra pages 
+- [ ] Improve search form
 - [ ] Create mobile version
 - [ ] Write unit tests
 - [ ] Complete the readme

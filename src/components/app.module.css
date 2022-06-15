@@ -5,10 +5,8 @@
   overflow: hidden;
 }
 
-
 .header {
   height: 15%;
-  /* background-color: aquamarine; */
   display: flex;
   justify-content: flex-start;
 }
@@ -18,12 +16,9 @@
   margin: 2rem;
   width: 125px;
   height: auto;
+  transition: all .3s ease-in-out;
 }
 
-
-
-.content {
-  height: 80%;
-  width: 100%;
+.header img:hover {
+  transform: scale(1.1);
 }
-

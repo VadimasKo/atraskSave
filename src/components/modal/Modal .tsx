@@ -63,7 +63,7 @@ const Modal = ({ onClose }: Props) => {
               Kaip  stipriai nori prakaituoti vienas?
               <input type='range'/>
             </div>
-            <button type="submit" onClick={() => navigate('sports/tennis')}>
+            <button type="submit" onClick={() => navigate('/tennis')}>
               Ieškoti
             </button>
           </div>

@@ -5,8 +5,6 @@ import basketBall from "../../assets/basketBall.svg"
 import basketHoop from "../../assets/basketHoop.svg"
 import styles from "./landingPage.module.css"
 
-
-
 const ballVariants = {
   hidden: {
     opacity: 0,
@@ -46,16 +44,15 @@ const LandingPage = () => {
   return (
     <div className={styles.landingPage}>
       <motion.img 
-        src={basketHoop}
-        className={styles.basketHoop}
         alt="hoop"
+        className={styles.basketHoop}
+        src={basketHoop}
       />
 
       <div className={styles.content}>
         <motion.h1
-          className={styles.heroText}
-          
           animate="visible"
+          className={styles.heroText}
           initial="hidden"
           variants={textTransition}
         >
