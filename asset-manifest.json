@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atraskSave/static/css/main.d5ced66c.css",
-    "main.js": "/atraskSave/static/js/main.a8645448.js",
+    "main.js": "/atraskSave/static/js/main.09c5e336.js",
     "static/js/787.d60896b5.chunk.js": "/atraskSave/static/js/787.d60896b5.chunk.js",
     "static/media/basketHoop.svg": "/atraskSave/static/media/basketHoop.206257bcbedcb24c784879abcaa6e918.svg",
     "static/media/goal.svg": "/atraskSave/static/media/goal.f547b77ba7e1ab732553d30dd9ebb602.svg",
@@ -10,11 +10,11 @@
     "static/media/logo.png": "/atraskSave/static/media/logo.a570927e664af64732c1.png",
     "index.html": "/atraskSave/index.html",
     "main.d5ced66c.css.map": "/atraskSave/static/css/main.d5ced66c.css.map",
-    "main.a8645448.js.map": "/atraskSave/static/js/main.a8645448.js.map",
+    "main.09c5e336.js.map": "/atraskSave/static/js/main.09c5e336.js.map",
     "787.d60896b5.chunk.js.map": "/atraskSave/static/js/787.d60896b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5ced66c.css",
-    "static/js/main.a8645448.js"
+    "static/js/main.09c5e336.js"
   ]
 }
