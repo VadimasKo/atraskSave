@@ -8,15 +8,16 @@
 
 ## About 🔍 <a name='1'></a>
  To Do
+ ![](./gif.gif)
 ## Development roadmap :golf: <a name='2'></a>
 - [x] Create a prototype
 - [x] Create a live version using gh-pages
-- [ ] Create general Sport component
+- [x] Create general Sport component
 - [ ] Create few extra pages 
 - [ ] Improve search form
-- [ ] Create mobile version
 - [ ] Write unit tests
 - [ ] Complete the readme
+- [ ] Create mobile (responsive) version
 
 
 ## Available Scripts  🛠️  <a name="3"></a>
