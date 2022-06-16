@@ -1,43 +1,62 @@
 import styles from './gymSlider.module.css'
-import gymImg from '../../../assets/aikstinas.jpg'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
-const gyms  = [
-  {
-    img: gymImg,
-    title: 'SEB teniso kourtas',
-    location: 'location1'
+import fullList from './gymList.json'
+
+interface Gym {
+  img: string,
+  title: string,
+  location: string
+}
+
+
+const sliderTransition = {
+  hidden: {
+    opacity: 0,
+    x: "50vw",
   },
-  {
-    img: gymImg,
-    title: 'GymImg2',
-    location: 'location2'
-  },
-  {
-    img: gymImg,
-    title: 'GymImg3',
-    location: 'location3'
-  },
-]
+  visible: {
+    x: "0",
+    opacity: 1,
+    transition: { type: 'spring', delay: 0.5, duration: 1 },
+  }
+}
 
 
 const GymSlider = () => {
   const [position, setPosition] = useState(0)
+  const [gyms, setGyms] = useState<Gym[] | null>(null)
 
-  return (
-    <div className={styles.GymSlider} >
+  useEffect(() => {
+    const buffer: Gym[] = JSON.parse(JSON.stringify(fullList))['Tenisas']
+    setGyms(buffer)
+  }, [])
+
+
+  return gyms ? (
+    <motion.div
+      className={styles.GymSlider}
+      animate="visible"
+      initial="hidden"
+      variants={sliderTransition}
+    >
       <h2>Kur galima išmeginti?</h2>
-
-      <div className={styles.slider}>
-       <motion.div className={styles.gym}>
-        <img src={gyms[position].img} alt='gym'/>
+  
+      <div className={styles.gym}>
+        <img src={process.env.PUBLIC_URL+gyms[position].img} alt='gym'/>
         <p>{gyms[position].title}</p>
-       </motion.div>
       </div>
-     </div>
-  )
+  
+      <ul className={styles.gymNav}>
+        {gyms.map((gym, i) => <motion.li
+          key={i}
+          className={ position === i ? styles.activeDot : styles.dot }
+          onClick={() => setPosition(i)}
+        />)}
+      </ul>
+     </motion.div>
+  ) : <></>
 }
-
 
 export default GymSlider
