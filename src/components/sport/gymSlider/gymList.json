@@ -1,0 +1,19 @@
+ {
+  "Tenisas": [
+    {
+      "img": "/assets/aikstinas.jpg",
+      "title": "SEB teniso kourtas",
+      "location": "location1"
+    },
+    {
+      "img": "/assets/aikstinas.jpg",
+      "title": "SEB 2 teniso kourtas",
+      "location": "location1"
+    },
+    {
+      "img": "/assets/aikstinas.jpg",
+      "title": "SEB 3 teniso kourtas",
+      "location": "location1"
+    }
+  ]
+}
