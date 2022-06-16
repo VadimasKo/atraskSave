@@ -3,7 +3,6 @@ import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import LandingPage from './landingPage/LandingPage';
 import Tennis from './tennis/Tennis';
 import styles from './app.module.css'
-import logo from '../assets/logo.png'
 
 
 const App = () => {
@@ -12,7 +11,7 @@ const App = () => {
       <HashRouter>
         <nav className={styles.header}>
           <Link to='/'>
-            <img src={logo} alt="Atrask Save"/>
+            <img src={process.env.PUBLIC_URL+'/assets/logo.png'} alt="Atrask Save"/>
           </Link>
         </nav>
         <Routes>

@@ -1,8 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
 import Modal from "../modal/Modal "
-import basketBall from "../../assets/basketBall.svg"
-import basketHoop from "../../assets/basketHoop.svg"
 import styles from "./landingPage.module.css"
 
 const ballVariants = {
@@ -46,7 +44,7 @@ const LandingPage = () => {
       <motion.img 
         alt="hoop"
         className={styles.basketHoop}
-        src={basketHoop}
+        src={process.env.PUBLIC_URL +'/assets/basketHoop.svg'}
       />
 
       <div className={styles.content}>
@@ -63,7 +61,7 @@ const LandingPage = () => {
           alt="Pradėti"
           className={styles.basketBall}
           onClick={() => setIsOpen(true)}
-          src={basketBall}
+          src={process.env.PUBLIC_URL + '/assets/basketBall.svg'}
           
           animate="visible"
           initial="hidden"

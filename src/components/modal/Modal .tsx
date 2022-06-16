@@ -1,6 +1,5 @@
 import { motion } from "framer-motion"
 import Backdrop from "./backdrop/Backdrop"
-import goal from "../../assets/goal.svg"
 import styles from "./modal.module.css"
 import { useNavigate } from "react-router-dom"
 
@@ -44,7 +43,7 @@ const Modal = ({ onClose }: Props) => {
       >
         <div className={styles.banner}>
           <h2>Atsakyk ir surask</h2>
-          <img src={goal} className={styles.bannerImg} alt="goalImg"/>
+          <img src='/assets/goal.svg' className={styles.bannerImg} alt="goalImg"/>
         </div>
 
         <div className={styles.formWrapper}>

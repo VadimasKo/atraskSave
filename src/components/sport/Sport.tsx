@@ -19,7 +19,7 @@ const Sport = ({ sportName, sportDescr, imgSrc }: Props) => {
         <div className={styles.description}>{sportDescr}</div>
       </motion.article>
       <motion.img
-        src={imgSrc}
+        src={process.env.PUBLIC_URL + imgSrc}
         alt="background Image"
         className={styles.sportImg}
       />
