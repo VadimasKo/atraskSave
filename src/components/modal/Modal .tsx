@@ -43,25 +43,29 @@ const Modal = ({ onClose }: Props) => {
       >
         <div className={styles.banner}>
           <h2>Atsakyk ir surask</h2>
-          <img src='/assets/goal.svg' className={styles.bannerImg} alt="goalImg"/>
+          <img 
+            src={process.env.PUBLIC_URL+'/assets/goal.svg'}
+            className={styles.bannerImg} alt="goalImg"/>
         </div>
 
         <div className={styles.formWrapper}>
           <div className={styles.form}>
+
             <div className={styles.option} style={{maxWidth: '65%'}}>
-               Kiek eurų esi linkęs paploti?
+              Kiek eurų esi linkęs paploti?
               <input type='range'/>
             </div>
+
             <div  className={styles.option} style={{maxWidth: '80%'}}> 
-            
               Kaip stipriai megsti adrenalina?
               <input type='range'/>
             </div>
+
             <div  className={styles.option} style={{maxWidth: '90%'}}> 
-        
               Kaip  stipriai nori prakaituoti vienas?
               <input type='range'/>
             </div>
+            
             <button type="submit" onClick={() => navigate('/tennis')}>
               Ieškoti
             </button>
