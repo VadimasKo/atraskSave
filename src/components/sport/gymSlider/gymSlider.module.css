@@ -40,5 +40,8 @@
   border-radius: 50%;
   display: inline-block;
   margin-right: 0.5rem;
+}
 
+.gym img {
+  max-width: 100%;
 }

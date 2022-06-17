@@ -10,6 +10,10 @@ interface Gym {
   location: string
 }
 
+interface Props {
+  sportName: string
+}
+
 
 const sliderTransition = {
   hidden: {
@@ -24,14 +28,14 @@ const sliderTransition = {
 }
 
 
-const GymSlider = () => {
+const GymSlider = ({ sportName }: Props) => {
   const [position, setPosition] = useState(0)
   const [gyms, setGyms] = useState<Gym[] | null>(null)
 
   useEffect(() => {
-    const buffer: Gym[] = JSON.parse(JSON.stringify(fullList))['Tenisas']
+    const buffer: Gym[] = JSON.parse(JSON.stringify(fullList))[sportName]
     setGyms(buffer)
-  }, [])
+  }, [sportName])
 
 
   return gyms ? (
