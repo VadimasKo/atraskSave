@@ -1,0 +1,21 @@
+import Sport     from '../sport/Sport'
+
+const footballDescr = <p>
+  tai sportas, kuris reikalauja <b>daug</b> fizinių jėgų, vikrumo ir <b>sumanumo.</b><br/>
+  Mušdamas kamuoliuką <b>jau turi žinoti</b>, kurs jis nuskries, kaip į tai sureaguos varžovas.<br/>
+  Visa tai lavina <b>mąstymą</b>, gerina <b>atmintį</b> ir, žinoma, <b>nuotaiką</b>.
+</p>
+
+
+const Football = () => {
+  return (
+    <Sport
+      imgSrc={'/assets/goal.svg'}
+      sportDescr={footballDescr}
+      sportName="Futbolas"
+    />
+  )
+}
+
+export default Football
+

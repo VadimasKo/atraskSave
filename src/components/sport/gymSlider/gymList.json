@@ -15,5 +15,17 @@
       "title": "SEB 3 teniso kourtas",
       "location": "location1"
     }
+  ],
+  "Futbolas": [
+    {
+      "img": "/assets/lffStadionas.jpg",
+      "title": "LFF Stadionas",
+      "location": "location1"
+    },
+    {
+      "img": "/assets/lffStadionas.jpg",
+      "title": "LFF Stadionas 2",
+      "location": "location1"
+    }
   ]
 }

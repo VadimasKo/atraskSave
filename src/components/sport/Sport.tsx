@@ -24,7 +24,7 @@ const Sport = ({ sportName, sportDescr, imgSrc }: Props) => {
         className={styles.sportImg}
       />
       <motion.div style={{ width: '25%',height: '100%', marginRight: '2rem'}}>
-        <GymSlider/>
+        <GymSlider sportName={sportName}/>
       </motion.div>
     </section>
   )

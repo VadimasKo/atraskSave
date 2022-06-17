@@ -3,6 +3,7 @@ import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import LandingPage from './landingPage/LandingPage';
 import Tennis from './tennis/Tennis';
 import styles from './app.module.css'
+import Football from './football/Football';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/tennis' element={<Tennis/>}/>
+          <Route path='/football' element={<Football/>}/>
         </Routes>
       </HashRouter>
       
