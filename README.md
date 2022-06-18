@@ -13,8 +13,8 @@
 - [x] Create a prototype
 - [x] Create a live version using gh-pages
 - [x] Create general Sport component
-- [ ] Create few extra pages 
-- [ ] Improve search form
+- [x] Create few extra pages 
+- [x] Improve search form
 - [ ] Write unit tests
 - [ ] Complete the readme
 - [ ] Create mobile (responsive) version
