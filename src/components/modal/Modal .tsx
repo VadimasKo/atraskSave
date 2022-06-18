@@ -2,13 +2,15 @@ import { motion } from "framer-motion"
 import Backdrop from "./backdrop/Backdrop"
 import styles from "./modal.module.css"
 import { useNavigate } from "react-router-dom"
+import RangeInput from "../common/RangeInput"
+import { useState } from "react"
 
 interface Props {
   onClose: () => void
 }
 
 export const slideIn = {
-  hidden : {
+  hidden: {
     x: "100vw",
     opacity: 0,
   },
@@ -29,49 +31,50 @@ export const slideIn = {
 
 const Modal = ({ onClose }: Props) => {
   const navigate = useNavigate()
+  const [lonelyScore, setLonelyScore] = useState(5)
 
+  const onSubmit = () => navigate(lonelyScore >= 5 ? './tennis' : './football')
+  
   return (
     <Backdrop onClick={onClose} >
       <motion.div
         onClick={e => e.stopPropagation()}
         className={styles.modal}
-        
+
         variants={slideIn}
         initial='hidden'
         animate='visible'
         exit='exit'
       >
-        <div className={styles.banner}>
+        <div>
           <h2>Atsakyk ir surask</h2>
-          <img 
-            src={process.env.PUBLIC_URL+'/assets/goal.svg'}
-            className={styles.bannerImg} alt="goalImg"/>
+          <RangeInput
+            name="Kiek esi linkęs išleisti"
+            prefix="0.000"
+            suffix="pinigai yra tik skaičius"
+          />
+          <RangeInput
+            name="Ar tau trūksta adrenalino?"
+            prefix="NOPE!"
+            suffix="Ant tiek kad VVT važinėju be bilietuko"
+          />
+
+          <RangeInput
+            name="Ar norėtum sportuoti vienas?"
+            prefix="O__o?"
+            suffix="Šlapios beždžionės nedomina"
+            onChange={e => setLonelyScore(parseInt(e.currentTarget.value))}
+          />
+
+          <button
+            type="submit"
+            className={styles.submitButton}
+            onClick={onSubmit}
+          >
+            Ieškoti
+          </button>
         </div>
 
-        <div className={styles.formWrapper}>
-          <div className={styles.form}>
-
-            <div className={styles.option} style={{maxWidth: '65%'}}>
-              Kiek eurų esi linkęs paploti?
-              <input type='range'/>
-            </div>
-
-            <div  className={styles.option} style={{maxWidth: '80%'}}> 
-              Kaip stipriai megsti adrenalina?
-              <input type='range'/>
-            </div>
-
-            <div  className={styles.option} style={{maxWidth: '90%'}}> 
-              Kaip  stipriai nori prakaituoti vienas?
-              <input type='range'/>
-            </div>
-            
-            <button type="submit" onClick={() => navigate('/tennis')}>
-              Ieškoti
-            </button>
-          </div>
-
-        </div>
       </motion.div>
     </Backdrop>
   )
