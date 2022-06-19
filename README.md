@@ -1,5 +1,3 @@
-![](./banner.png)
-
 # Atrask Save :runner: :swimmer:
 
 | 📖 Table Of Contents | link       |
@@ -11,7 +9,7 @@
 ## About 🔍 <a name='1'></a>
 
 To Do
-![](./gif.gif)
+![](./example.gif)
 
 ## Development roadmap :golf: <a name='2'></a>
 
