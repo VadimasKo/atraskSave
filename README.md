@@ -9,6 +9,7 @@
 ## About 🔍 <a name='1'></a>
 
 This application is made to provide its users a convenient way to find new ways of exercising and being active.
+[Live version]("https://vadimasko.github.io/atraskSave/")
 
 ![](./example.gif)
 
