@@ -1,14 +1,15 @@
 # Atrask Save :runner: :swimmer:
 
-| 📖 Table Of Contents | link       |
-| -------------------- | ---------- |
-| About                | [here](#1) |
-| Dev roadmap          | [here](#2) |
-| Available Scripts    | [here](#3) |
+| Table Of Contents | link       |
+| ----------------- | ---------- |
+| About             | [here](#1) |
+| Dev roadmap       | [here](#2) |
+| Available Scripts | [here](#3) |
 
 ## About 🔍 <a name='1'></a>
 
-To Do
+This application is made to provide its users a convenient way to find new ways of exercising and being active.
+
 ![](./example.gif)
 
 ## Development roadmap :golf: <a name='2'></a>
@@ -18,8 +19,8 @@ To Do
 - [x] Create general Sport component
 - [x] Create few extra pages
 - [x] Improve search form
-- [ ] Write unit tests
-- [ ] Complete the readme
+- [x] Write unit tests
+- [x] Complete Readme
 - [ ] Create mobile (responsive) version
 
 ## Available Scripts 🛠️ <a name="3"></a>
