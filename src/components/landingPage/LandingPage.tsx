@@ -12,7 +12,6 @@ const ballVariants = {
     y: "0",
     opacity: 1,
     transition: { type: "spring", delay: 1 },
-    whileHover: { opacity: 0 },
     borderRadius: "100%",
   },
   hover: {
