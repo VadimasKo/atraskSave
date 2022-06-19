@@ -7,7 +7,7 @@ const footballDescr = <p>
 </p>
 
 
-const Football = () => {
+export default  () => {
   return (
     <Sport
       imgSrc={'/assets/goal.svg'}
@@ -16,6 +16,3 @@ const Football = () => {
     />
   )
 }
-
-export default Football
-

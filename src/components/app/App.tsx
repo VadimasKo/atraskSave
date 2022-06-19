@@ -1,12 +1,12 @@
 
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
-import LandingPage from './landingPage/LandingPage';
-import Tennis from './tennis/Tennis';
+import LandingPage from '../landingPage/LandingPage';
+import Tennis from '../tennis/Tennis';
 import styles from './app.module.css'
-import Football from './football/Football';
+import Football from '../football/Football';
 
 
-const App = () => {
+export default  () => {
   return (
     <div className={styles.app}>
       <HashRouter>
@@ -21,9 +21,6 @@ const App = () => {
           <Route path='/football' element={<Football/>}/>
         </Routes>
       </HashRouter>
-      
     </div>
   ) 
 }
-
-export default App

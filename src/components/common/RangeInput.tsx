@@ -8,8 +8,7 @@ interface Props {
 
 }
 
-
-const RangeInput = ({ onChange, prefix, suffix, name }: Props) => {
+export default ({ onChange, prefix, suffix, name }: Props) => {
   return (
     <div className={styles.outerWrapper}>
       <label htmlFor={name}>{name}</label>
@@ -27,5 +26,3 @@ const RangeInput = ({ onChange, prefix, suffix, name }: Props) => {
     </div>
   )
 }
-
-export default RangeInput

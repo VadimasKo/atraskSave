@@ -35,8 +35,7 @@ const textTransition = {
   }
 }
 
-
-const LandingPage = () => {
+export default  () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -79,5 +78,3 @@ const LandingPage = () => {
     </div>
   )
 }
-
-export default LandingPage

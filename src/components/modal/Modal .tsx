@@ -1,9 +1,9 @@
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
 import Backdrop from "./backdrop/Backdrop"
-import styles from "./modal.module.css"
-import { useNavigate } from "react-router-dom"
 import RangeInput from "../common/RangeInput"
-import { useState } from "react"
+import styles from "./modal.module.css"
 
 interface Props {
   onClose: () => void
@@ -29,7 +29,7 @@ export const slideIn = {
 }
 
 
-const Modal = ({ onClose }: Props) => {
+export default ({ onClose }: Props) => {
   const navigate = useNavigate()
   const [lonelyScore, setLonelyScore] = useState(5)
 
@@ -74,10 +74,7 @@ const Modal = ({ onClose }: Props) => {
             Ieškoti
           </button>
         </div>
-
       </motion.div>
     </Backdrop>
   )
 }
-
-export default Modal

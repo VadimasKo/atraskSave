@@ -28,7 +28,7 @@ const sliderTransition = {
 }
 
 
-const GymSlider = ({ sportName }: Props) => {
+export default ({ sportName }: Props) => {
   const [position, setPosition] = useState(0)
   const [gyms, setGyms] = useState<Gym[] | null>(null)
 
@@ -63,4 +63,4 @@ const GymSlider = ({ sportName }: Props) => {
   ) : <></>
 }
 
-export default GymSlider
+

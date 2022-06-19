@@ -1,4 +1,3 @@
-
 .sport {
   width: 100%;
   height: 100%;
@@ -19,16 +18,10 @@
   text-align: justify;
   line-height: 2.5rem;
   margin-top: -2rem;
-
 }
 
 .sportImg {
   position: absolute;
   width: 45%;
-  /* margin-top: 2%; */
-  /* margin-left: -5%; */
-  /* margin-bottom: -5%; */
-  /* right: 0; */
-  /* bottom: 0; */
   z-index: -1;
 }

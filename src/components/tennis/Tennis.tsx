@@ -1,4 +1,4 @@
-import Sport     from '../sport/Sport'
+import Sport from '../sport/Sport'
 
 const tennisDescr = <p>
   tai sportas, kuris reikalauja <b>daug</b> fizinių jėgų, vikrumo ir <b>sumanumo.</b><br/>
@@ -7,7 +7,7 @@ const tennisDescr = <p>
 </p>
 
 
-const Tennis = () => {
+export default  () => {
   return (
     <Sport
       imgSrc={'/assets/tennis.svg'}
@@ -16,5 +16,3 @@ const Tennis = () => {
     />
   )
 }
-
-export default Tennis

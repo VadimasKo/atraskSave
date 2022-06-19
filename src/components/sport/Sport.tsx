@@ -11,7 +11,7 @@ interface Props {
 }
 
 
-const Sport = ({ sportName, sportDescr, imgSrc }: Props) => {
+export default ({ sportName, sportDescr, imgSrc }: Props) => {
   return (
     <section className={styles.sport}>
       <motion.article>
@@ -29,5 +29,3 @@ const Sport = ({ sportName, sportDescr, imgSrc }: Props) => {
     </section>
   )
 }
-
-export default Sport
