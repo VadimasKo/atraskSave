@@ -1,15 +1,14 @@
-import { motion } from 'framer-motion'
-import { ReactNode } from 'react'
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
-import GymSlider from './gymSlider/GymSlider'
-import styles from './sport.module.css'
+import GymSlider from "./gymSlider/GymSlider";
+import styles from "./sport.module.css";
 
 interface Props {
-  sportName: string
-  sportDescr: ReactNode
-  imgSrc: string
+  sportName: string;
+  sportDescr: ReactNode;
+  imgSrc: string;
 }
-
 
 export default ({ sportName, sportDescr, imgSrc }: Props) => {
   return (
@@ -23,9 +22,9 @@ export default ({ sportName, sportDescr, imgSrc }: Props) => {
         alt="background Image"
         className={styles.sportImg}
       />
-      <motion.div style={{ width: '25%',height: '100%', marginRight: '2rem'}}>
-        <GymSlider sportName={sportName}/>
+      <motion.div style={{ width: "25%", height: "100%", marginRight: "2rem" }}>
+        <GymSlider sportName={sportName} />
       </motion.div>
     </section>
-  )
-}
+  );
+};

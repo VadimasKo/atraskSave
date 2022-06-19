@@ -16,7 +16,7 @@
   margin: 2rem;
   width: 125px;
   height: auto;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header img:hover {
